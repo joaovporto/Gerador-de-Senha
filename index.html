@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gerador de Senha</title>
+</head>
+<link href="styles.css" rel="stylesheet">
+
+<body>
+    <div class="container">
+        <h2 class="title">Gerador de Senha</h2>
+        <div class="result">
+            <div class="result__title field-title">
+                Gerador de Senha
+            </div>
+            <div class="result__info right">
+                clique para copiar
+            </div>
+            <div class="result__info left">
+                copiado
+            </div>
+            <div class="result__veiwbox" id="result">
+                CLIQUE EM GERAR SENHA
+            </div>
+            <button id="copy-btn" style="--x: 0; --y: 0"> 
+                <i class="far fa-copy"></i>
+            </button>
+        </div>
+        <div class="length range__slider" data-min="4" data-max="32">
+            <div class="length__title field-title" data-length="0">
+                tamanho:
+            </div>
+            <input type="range" id="slider" min="4" max="32" value="16">
+        </div>
+        <div class="settings">
+            <span class="setting__title field-title">
+                adcionais
+            </span>
+            <div class="setting">
+                <input type="checkbox" id="uppercase" checked>
+                <label for="uppercase">
+                    Incluir Maiúsculas
+                </label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="lowercase" checked>
+                <label for="lowercase">
+                    Incluir Minúsculas
+                </label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="number" checked>
+                <label for="number">
+                    Incluir Números
+                </label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="symbol" checked>
+                <label for="symbol">
+                    Incluir Símbolos
+                </label>
+            </div>
+            <button class="btn generate" id="generate">
+                Gerar Senha
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
